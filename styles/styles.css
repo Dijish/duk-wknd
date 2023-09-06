@@ -15,7 +15,7 @@
   --link-color: #035fe6;
   --link-hover-color: #ffea00;
   --background-color: #fff;
-  --overlay-background-color: #eee;
+  --overlay-background-color: #202020;
   --highlight-background-color: #ccc;
   --text-color: #000;
 
@@ -250,7 +250,8 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
 }
 
-.icon.icon-wknd-logo-dk svg {
+.icon.icon-wknd-logo-dk svg,
+.icon.icon-wknd-logo-light svg {
   width: 128px;
   height: 48px;
 }
