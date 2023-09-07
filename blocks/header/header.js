@@ -98,8 +98,11 @@ export default async function decorate(block) {
   if (resp.ok) {
     const html = await resp.text();
 
+    console.log(html);
+
     // decorate nav DOM
     const nav = document.createElement('nav');
+
     nav.id = 'nav';
     nav.innerHTML = html;
 
@@ -112,7 +115,7 @@ export default async function decorate(block) {
     const navSections = nav.querySelector('.nav-sections');
     if (navSections) {
       navSections.querySelectorAll(':scope > ul > li').forEach((navSection) => {
-        navSection.innerHTML = navSection.innerHTML.toUpperCase();
+        // navSection.innerHTML = navSection.innerHTML.toUpperCase();
         if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
         navSection.addEventListener('click', () => {
           if (isDesktop.matches) {
