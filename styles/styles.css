@@ -254,3 +254,16 @@ main .section.highlight {
   width: 128px;
   height: 48px;
 }
+
+.link-list ul,
+.link-list ol {
+  background-color: var(--overlay-background-color);
+  color: var(--background-color);
+  padding: 50px;
+}
+
+.link-list ul a:any-link,
+.link-list ol a:any-link{
+  color: var(--background-color);
+  text-decoration: underline;
+}
