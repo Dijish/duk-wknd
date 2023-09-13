@@ -1,7 +1,4 @@
 export default function decorate(block) {
-    
-    console.log('page-list: ', block);
-
     const rootPath = block.innerText.trim();
     console.log(rootPath);
 
@@ -42,8 +39,4 @@ export default function decorate(block) {
         block.textContent = '';
         block.append(ul);
     });
-    
-
-    // block.textContent = '';
-    // block.append(ul);
 }
